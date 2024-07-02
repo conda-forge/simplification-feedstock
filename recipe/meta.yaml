@@ -14,7 +14,7 @@ source:
 
 build:
   skip: true  # [py<=37]
-  number: 1
+  number: 2
   missing_dso_whitelist:  # [win]
     - "*/rdp.dll"  # [win]
 

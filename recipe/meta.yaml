@@ -52,7 +52,7 @@ test:
 about:
   summary: Fast linestring simplification using RDP or Visvalingam-Whyatt and a Rust binary
   home: https://github.com/urschrei/simplification
-  license: Blue Oak Model License (BlueOak-1.0.0)
+  license: BlueOak-1.0.0
   license_file: LICENSE.md
 
 extra:

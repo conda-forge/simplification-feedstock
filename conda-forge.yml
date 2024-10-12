@@ -7,3 +7,5 @@ github:
   branch_name: main
   tooling_branch_name: main
 test: native_and_emulated
+c_stdlib_version:  # [osx]
+  - "10.14"  # [osx]

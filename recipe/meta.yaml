@@ -1,5 +1,5 @@
 {% set name = "simplification" %}
-{% set version = "0.7.12" %}
+{% set version = "0.7.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/simplification-{{ version }}.tar.gz
-    sha256: 88feb3e7556f49752f9decf83102d2cffbbc22ac1376329c983f4a6b4ba92e58
+    sha256: 4ff7a7ef43eb2359a822b981c22c2cd8d58d92d84aa13c715662ec1887d5854e
   - git_url: https://github.com/urschrei/rdp.git
     git_rev: 525211da258e4864bcd3179e561d0e3dcb8dc60d
     folder: src/{{ name }}/rdp
 
 build:
   skip: true  # [py<=37]
-  number: 1
+  number: 0
   missing_dso_whitelist:   # [win]
     - "*/rdp.dll"  # [win]
 

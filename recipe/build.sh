@@ -30,8 +30,6 @@ case ${target_platform} in
     cp target/${TARGET}/release/librdp.dylib ../
     ;;
   osx-arm64)
-	xcodebuild -showsdks
-	SDKROOT=$(xcrun -sdk macosx${MACOSX_SDK_VERSION} --show-sdk-path)
   	TARGET=aarch64-apple-darwin
 	cargo build --release --target=${TARGET} --features headers
 	for lib in target/${TARGET}/release/*.dylib; do

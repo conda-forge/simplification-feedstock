@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/simplification-{{ version }}.tar.gz
+  - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/simplification-{{ version }}.tar.gz
     sha256: 4ff7a7ef43eb2359a822b981c22c2cd8d58d92d84aa13c715662ec1887d5854e
   - git_url: https://github.com/urschrei/rdp.git
     git_rev: 525211da258e4864bcd3179e561d0e3dcb8dc60d
@@ -14,7 +14,7 @@ source:
 
 build:
   skip: true  # [py<=37]
-  number: 0
+  number: 1
   missing_dso_whitelist:   # [win]
     - "*/rdp.dll"  # [win]
 

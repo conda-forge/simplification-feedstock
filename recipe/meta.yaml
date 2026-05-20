@@ -32,6 +32,7 @@ requirements:
     - cargo-bundle-licenses
     - scikit-build-core >=0.10
     - cython-cmake
+    - cmake >=3.21  # [not win]
   host:
     - python
     - setuptools >=45
@@ -39,6 +40,7 @@ requirements:
     - numpy >=2.0.0
     - cython >=3.1.0
     - cython-cmake
+    - cmake >=3.21  # [not win]
     - wheel >=0.29.0
     - scikit-build-core >=0.10
     - pip

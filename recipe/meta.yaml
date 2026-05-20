@@ -9,7 +9,7 @@ source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/simplification-{{ version }}.tar.gz
     sha256: bcc84d25e4f677c6b1870f27d7f17dffaeb60f3d3178b69214e43d3ac4442e7e
   - git_url: https://github.com/urschrei/rdp.git
-    git_rev: 525211da258e4864bcd3179e561d0e3dcb8dc60d
+    git_rev: a135c3c445ce720656a4df33ac1b9b47b4a4df97
     folder: src/{{ name }}/rdp
 
 build:
@@ -24,18 +24,21 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
     - numpy                                  # [build_platform != target_platform]
-    - python  # [build_platform != target_platform]
-    - cross-python_{{ target_platform }}  # [build_platform != target_platform]
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - {{ compiler("c") }}
     - {{ stdlib("c") }}
     - {{ compiler('rust') }}
     - cargo-bundle-licenses
+    - scikit-build-core >=0.10
+    - cython-cmake
   host:
     - python
     - setuptools >=45
     - setuptools-scm >=6.2
-    - numpy
-    - cython >=0.29.0
+    - numpy >=2.0.0
+    - cython >=3.1.0
+    - cython-cmake
     - wheel >=0.29.0
     - pip
   run:

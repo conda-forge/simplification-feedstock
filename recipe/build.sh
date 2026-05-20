@@ -46,6 +46,15 @@ esac
 
 cp include/header.h ../
 
+case ${target_platform} in
+  linux-*)
+    export CMAKE_ARGS="-DRDP_LIBRARY=${SRC_DIR}/src/simplification/librdp.so"
+    ;;
+  osx-*)
+    export CMAKE_ARGS="-DRDP_LIBRARY=${SRC_DIR}/src/simplification/librdp.dylib"
+    ;;
+esac
+
 cd ${SRC_DIR}
 
 # Build the Python package

@@ -1,5 +1,5 @@
 {% set name = "simplification" %}
-{% set version = "0.7.16" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/simplification-{{ version }}.tar.gz
-    sha256: bcc84d25e4f677c6b1870f27d7f17dffaeb60f3d3178b69214e43d3ac4442e7e
+    sha256: c1e33379455f5da02462b2d674b816a5f385bbbde216652101465fd33e4a2e3c
   - git_url: https://github.com/urschrei/rdp.git
     git_rev: a135c3c445ce720656a4df33ac1b9b47b4a4df97
     folder: src/{{ name }}/rdp

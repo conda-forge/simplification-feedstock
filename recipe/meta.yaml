@@ -30,6 +30,7 @@ requirements:
     - cargo-bundle-licenses
     - scikit-build-core >=0.10               # [build_platform != target_platform]
     - cython-cmake
+    - maturin
     - cmake >=3.21,<=3.31  # [not win]
     - make  # [not win]
     - ninja  # [win]
@@ -41,6 +42,7 @@ requirements:
     - cython >=3.1.0
     - cython-cmake
     - wheel >=0.29.0
+    - maturin
     - scikit-build-core >=0.10
     - pip
   run:
